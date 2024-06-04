@@ -1,3 +1,3 @@
 document.getElementById("logo").addEventListener("click", function() {
-    window.location.href = "MyRank.html";
+    window.location.href = "index.html";
 });
