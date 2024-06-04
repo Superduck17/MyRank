@@ -1,0 +1,112 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    width: 100%;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* This line centers the text vertically */
+    padding: 30px;
+    background-color: rgb(83, 160, 237);
+    color: rgb(239, 228, 228);
+    width: 100%;
+    box-sizing: border-box; /* Include padding in the total width and height */
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    margin-bottom: -30px;
+    margin-top: -15px;
+}
+
+.logo-text {
+    font-size: 32px;
+    line-height: 0;
+}
+
+.logo img {
+    width: 150px; /* Set a specific width */
+    height: auto; /* Maintain aspect ratio */
+    display: block;
+    margin-top: -15px;
+}
+
+nav {
+    display: flex;
+
+}
+
+nav ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 30px;
+    font-size: 40px;
+}
+
+li a {
+    text-decoration: none;
+    color: white;
+}
+
+li a:hover{
+    color: red;
+}
+
+.list {
+    display: flex;
+    justify-content:center;
+    gap: 300px;
+}
+
+.column {
+    justify-content: center;
+    margin: 0 0px
+}
+
+.image-container {
+    position: relative;
+    text-align: center;
+    transition: all .2s ease-in-out;
+    
+}
+
+.image-container img {
+    display: block;
+    height: 500px;
+    width: 500px;
+    object-fit: cover; 
+    justify-content: space-between;  
+    filter: grayscale(100%);
+	transition: .3s ease-in-out; 
+}
+
+.image-container h1 {
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+    text-align: center;
+    font-size: 40px;
+}
+/* annimates the artist images when hovered */
+.image-container:hover {
+    scale: 1.25;
+    z-index: 100;
+
+}
+
+.image-container:hover img {
+    filter: grayscale(0);
+}
